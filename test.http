@@ -1,0 +1,73 @@
+# LOCAL
+GET http://localhost:8080/local/findByParaCumpleanosTrue
+
+GET http://localhost:8080/local/1
+
+POST http://localhost:8080/local
+Content-Type: application/json
+
+{
+  "id": 0,
+  "nombre": "prueba",
+  "aforo": 100,
+  "dimensiones": null,
+  "estado": null,
+  "precio": 199,
+  "clasificacion": 10,
+  "descripcion": "este es un local de prueba",
+  "ubicacion": null,
+  "creado_en": null,
+  "eliminadoEn": null,
+  "paraCumpleanos": false,
+  "paraEventosCorporativos": false,
+  "paraMatrimonios": false,
+  "paraFiestasInfantiles": true
+}
+
+
+# LOCAL GALERIA
+GET http://localhost:8080/local_galeria
+
+GET http://localhost:8080/local_galeria/1
+
+POST http://localhost:8080/local_galeria
+Content-Type: application/json
+
+{
+  "id": 0,
+  "local_id": 1,
+  "foto": "prueba.png",
+  "creado_en": "2023-01-13T12:07:35.000+00:00",
+  "eliminado_en": "2023-01-13T12:07:54.000+00:00"
+}
+
+
+
+
+
+
+# LOCAL GALERIA
+GET http://localhost:8080/usuario
+
+
+POST http://localhost:8080/usuario/login
+Content-Type: application/json
+
+{
+  "usuario": "elberqf",
+  "clave": "123"
+}
+
+
+
+
+
+
+
+
+GET http://localhost:8080/evento/test
+
+
+GET http://localhost:8080/tipo_evento
+
+
